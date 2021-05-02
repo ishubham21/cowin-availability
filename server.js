@@ -8,7 +8,7 @@ const axios = require('axios')
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
 const revStr = require('./reverseStr')
 
-//a function to make an API call to CoWin API
+//a function to make an API call - CoWin API
 async function fecthData(pincode, date, res) {
     let config = {
         method: 'GET',
