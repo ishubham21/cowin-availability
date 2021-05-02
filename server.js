@@ -20,12 +20,15 @@ async function fecthData(pincode, date, res) {
     }
     await axios(config)
         .then((response) => {
-            console.log(response.data);
-            res.render('vaccine.ejs', { data: response.data})
-            
+            if(response.data.centers == 0){
+                res.render('noMatch.ejs', { out: "No centers found! Try for a broad search..."})
+            }
+            else{
+                res.render('vaccine.ejs', { data: response.data })
+            }
         })
         .catch(err => {
-            console.log(err);
+            res.render('noMatch.ejs', {out: "Hmm...seems like there's a problem. Please check your area PIN or the date."})
         })
 }
 

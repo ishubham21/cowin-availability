@@ -1,7 +1,31 @@
 <%- include('partials/head.ejs') %>
 
+                <h4 style="text-align: center; margin-top: 20px;">Date: <%= data.centers[0].sessions[0].date %></h4>
                 <div class="card-container">
-                    <div class="card"></div>
+                    <% for(let i = 0; i < data.centers.length; i++){ %>
+                        <div class="card">
+                            <h4>
+                                <%= data.centers[i].name %>
+                            </h4>
+                            <p><span>Available Vaccines:</span>
+                                <%= data.centers[i].sessions[0].available_capacity %>
+                            </p>
+                            <!-- <p><span>Vaccines' Name:</span>
+                            </p> -->
+                            <p><span>Minimum Age:</span>
+                                <%= data.centers[i].sessions[0].min_age_limit %>
+                            </p>
+                            <p><span>Time:</span>
+                                <%= data.centers[i].from %> - <%= data.centers[i].to %>
+                            </p>
+                            <p><span>Fee:</span>
+                                <%= data.centers[i].fee_type %>
+                            </p>
+                            <p><span>Address:</span>
+                                <%= data.centers[i].center_id %>, <%= data.centers[i].block_name %>, <%= data.centers[i].district_name %>
+                            </p>
+                        </div>
+                    <% } %>
                 </div>
 
 <%- include('partials/foot.ejs') %>
