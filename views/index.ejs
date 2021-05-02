@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Vaccine Availibity</title>
+    <title>Vaccine Availability</title>
     <meta name="description" content="This website shows the current status of the vaccine">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/app.css">
@@ -22,9 +22,11 @@
             <div class="sub-div">
                 <h2>Vaccine Availability</h2>
 
-                <form>
-                    <select name="states" id="states"></select>
+                <form  action="/vaccine" method="post">
+                    <input type="text" name="pincode" id="pincode" placeholder="pincode">
+                    <button type="submit">Submit</button>
                 </form>
+
             </div>
         </div>
     </div>
