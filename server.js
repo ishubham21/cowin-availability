@@ -6,7 +6,7 @@ const path = require('path')
 const port = 8000
 const axios = require('axios')
 const urlencodedParser = bodyParser.urlencoded({ extended: false })
-const revStr = require('./reverseStr')
+const revStr = require('./controllers/reverseStr')
 
 //a function to make an API call - CoWin API
 async function fecthData(pincode, date, res) {
