@@ -1,22 +1,22 @@
 {
   "name": "vaccine-india",
   "version": "1.0.0",
-  "description": "",
+  "description": "This app shows you the vaccines which are available in your region.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serve.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ishubham21/cowin-availability.git"
+    "url": "https://github.com/ishubham21/cowin-availability.git"
   },
   "keywords": ["vaccines", "india"],
-  "author": "",
+  "author": "Shubham Gautam",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ishubham21/cowin-availability/issues"
   },
-  "homepage": "https://github.com/ishubham21/cowin-availability#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "body-parser": "^1.19.0",
