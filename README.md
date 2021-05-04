@@ -54,6 +54,6 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
 ## To run the application, open your browser and in the address bar type:
 
-    $ http://localhost:800
+    $ http://localhost:8000
 
 
